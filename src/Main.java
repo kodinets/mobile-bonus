@@ -3,13 +3,19 @@ public class Main {
 
         int account = 100;
         int payment = 1500;
-        int bonus = payment / 100 * 1;
-        int total = account + payment;
 
-        if (payment >= 1000) {
-            System.out.println(account + payment + bonus);
-        } else {
-            System.out.println(total);
+        int bonus;
+        if (payment >= 1000)
+            bonus = payment / 100 * 1;
+
+        else
+            bonus = 0;
+        {
+            System.out.println("количество бонусных рублей:" + bonus);
+        }
+        int total = account + payment + bonus;
+        {
+            System.out.println("итоговый счет:" + total);
         }
 
     }
